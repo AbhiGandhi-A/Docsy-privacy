@@ -14,7 +14,8 @@ export function createEmailTransporter() {
   const pass = process.env.SMTP_PASS
 
   if (!host || !port || !user || !pass) {
-    throw new Error('Missing SMTP configuration in environment variables')
+    console.warn('SMTP not configured - email functionality disabled')
+    return null
   }
 
   return nodemailer.createTransport({
@@ -43,8 +44,9 @@ export async function sendDeletionRequestEmail({
   const transporter = createEmailTransporter()
   const developerEmail = process.env.DEVELOPER_EMAIL
 
-  if (!developerEmail) {
-    throw new Error('DEVELOPER_EMAIL not configured')
+  if (!transporter || !developerEmail) {
+    console.warn(`Deletion request from ${userEmail} would be emailed but SMTP is not configured`)
+    return
   }
 
   const htmlContent = `

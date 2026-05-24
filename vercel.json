@@ -1,15 +1,6 @@
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install",
-  "env": {
-    "SMTP_HOST": "@smtp_host",
-    "SMTP_PORT": "@smtp_port",
-    "SMTP_USER": "@smtp_user",
-    "SMTP_PASS": "@smtp_pass",
-    "DEVELOPER_EMAIL": "@developer_email",
-    "NEXT_PUBLIC_APP_NAME": "@app_name",
-    "NEXT_PUBLIC_API_URL": "@api_url"
-  },
   "git": {
     "deploymentEnabled": {
       "main": true
