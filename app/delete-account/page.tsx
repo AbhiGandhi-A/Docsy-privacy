@@ -8,11 +8,6 @@ import Button from '@/components/Button'
 import Card from '@/components/Card'
 import { useToast } from '@/components/Toast'
 
-const itemVariants = {
-  hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-}
-
 export default function DeleteAccount() {
   const { success, error } = useToast()
   const [loading, setLoading] = useState(false)
@@ -158,7 +153,7 @@ export default function DeleteAccount() {
               </div>
 
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
-                If you don't see an email, check your spam folder or contact support.
+                If you don&apos;t see an email, check your spam folder or contact support.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -230,7 +225,7 @@ export default function DeleteAccount() {
                 <AlertTriangle className="w-6 h-6 text-red-600 flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-red-900 dark:text-red-200 mb-2">
-                    Warning: This Action is Permanent
+                    Warning: This Action Is Permanent
                   </h3>
                   <ul className="text-red-800 dark:text-red-300 space-y-1 text-sm">
                     <li>
@@ -358,8 +353,7 @@ export default function DeleteAccount() {
                       className="w-5 h-5 rounded border-gray-300 dark:border-gray-600 text-red-600 focus:ring-2 focus:ring-red-500 smooth-transition mt-1"
                     />
                     <span className="text-gray-700 dark:text-gray-300">
-                      I understand that this will permanently delete my account and all
-                      associated data. This action cannot be undone.
+                      I understand that this will permanently delete my account and all associated data. This action cannot be undone.
                     </span>
                   </label>
                   {errors.accepted && (
@@ -426,7 +420,7 @@ export default function DeleteAccount() {
               <div className="flex gap-4 items-start">
                 <Shield className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
                 <div>
-                  <h3 className="font-bold text-lg mb-3">What Happens Next?</h3>
+                  <h3 className="font-bold text-lg mb-3">What Happens Next</h3>
                   <ol className="space-y-2 text-gray-700 dark:text-gray-300">
                     <li className="flex gap-3">
                       <span className="font-bold text-blue-600 dark:text-blue-400 flex-shrink-0">
