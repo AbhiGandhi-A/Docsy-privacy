@@ -123,13 +123,10 @@ export default function PrivacyPolicy() {
           >
             <Card>
               <p className="text-lg mb-4">
-                <strong>Docsy</strong> ("we," "our," or "us") is committed to protecting your
-                privacy. This Privacy Policy explains how our app collects, uses, discloses,
-                and safeguards your information when you use our mobile application ("App").
+                <strong>Docsy</strong> (we, our, or us) is committed to protecting your privacy. This Privacy Policy explains how our app collects, uses, discloses, and safeguards your information when you use our mobile application.
               </p>
               <p className="text-base text-gray-700 dark:text-gray-300">
-                Please read this privacy policy carefully. If you do not agree with our
-                policies and practices, please do not use our App.
+                Please read this privacy policy carefully. If you do not agree with our policies and practices, please do not use our app.
               </p>
             </Card>
           </motion.div>
@@ -282,7 +279,7 @@ export default function PrivacyPolicy() {
               <Card>
                 <h3 className="text-xl font-bold mb-3">Revoke Access</h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  You can revoke Docsy's access to your Google Drive at any time by visiting:{' '}
+                  You can revoke Docsy&apos;s access to your Google Drive at any time by visiting:{' '}
                   <a
                     href="https://myaccount.google.com/permissions"
                     target="_blank"
@@ -393,9 +390,7 @@ export default function PrivacyPolicy() {
               <Card>
                 <h3 className="text-xl font-bold mb-3">Data Protection Guarantee</h3>
                 <p className="text-gray-700 dark:text-gray-300">
-                  <strong>Vault data is NEVER uploaded to Docsy servers or external services.</strong>
-                  All vault content remains locally encrypted on your device at all times. This
-                  ensures maximum privacy and security for your most sensitive documents.
+                  <strong>Vault data is NEVER uploaded to Docsy servers or external services.</strong> All vault content remains locally encrypted on your device at all times. This ensures maximum privacy and security for your most sensitive documents.
                 </p>
               </Card>
 

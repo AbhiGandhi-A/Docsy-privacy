@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, Shield, AlertCircle } from 'lucide-react'
+import { Mail, Shield, FileText } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           {/* About */}
           <div>
             <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
@@ -16,30 +16,30 @@ export default function Footer() {
               </div>
               Docsy
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              AI-powered PDF toolkit with OCR scanning, encryption, and secure vault.
+            <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              AI-powered PDF toolkit with OCR scanning, encryption, and secure document management.
             </p>
           </div>
 
-          {/* Legal */}
+          {/* Quick Links */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold mb-4">Quick Links</h4>
+            <ul className="space-y-3">
               <li>
                 <Link
-                  href="/privacy-policy"
+                  href="/"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 smooth-transition text-sm"
                 >
-                  Privacy Policy
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/delete-account"
+                  href="/privacy-policy"
                   className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 smooth-transition text-sm flex items-center gap-1"
                 >
-                  <AlertCircle className="w-4 h-4" />
-                  Delete Account
+                  <FileText className="w-4 h-4" />
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
@@ -56,7 +56,7 @@ export default function Footer() {
                 AES-256 Encryption
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Firebase Security
+                Firebase Authentication
               </li>
               <li className="text-gray-600 dark:text-gray-400">
                 GDPR Compliant
@@ -68,14 +68,14 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              Developer
+              Support
             </h4>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
               <strong>Abhi Gandhi</strong>
               <br />
               <a
                 href="mailto:abhi@docsy.app"
-                className="hover:text-primary-600 dark:hover:text-primary-400 smooth-transition"
+                className="text-primary-600 dark:text-primary-400 hover:underline smooth-transition"
               >
                 abhi@docsy.app
               </a>
@@ -92,9 +92,6 @@ export default function Footer() {
               </p>
             </div>
             <div className="md:text-right">
-              <p className="mb-2">
-                <strong>Web Compliance</strong>
-              </p>
               <p className="text-xs">
                 This website complies with Google Play Data Safety and API Services User Data Policy.
               </p>

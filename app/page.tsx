@@ -101,9 +101,7 @@ export default function Home() {
               variants={itemVariants}
               className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
             >
-              Transform your documents with AI-powered OCR, intelligent summaries,
-              and military-grade encryption. Seamlessly sync with Google Drive and
-              keep your files secure.
+              Transform your documents with AI-powered OCR, intelligent summaries, and military-grade encryption. Seamlessly sync with Google Drive and keep your files secure.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -139,10 +137,10 @@ export default function Home() {
               </div>
               <div>
                 <div className="text-2xl sm:text-3xl font-bold text-primary-600 dark:text-primary-400">
-                  0ms
+                  Zero
                 </div>
                 <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
-                  Cloud Storage
+                  Server Uploads
                 </p>
               </div>
               <div>
@@ -288,15 +286,14 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Ready to Transform Your Documents?
+              Ready to Secure Your Documents?
             </h2>
             <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-              Download Docsy today and experience the power of AI-driven document
-              management with military-grade security.
+              Download Docsy today and experience the power of AI-driven document management with military-grade security.
             </p>
             <Link href="/privacy-policy">
               <Button size="lg" variant="secondary">
-                Explore Docsy
+                Learn More
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
